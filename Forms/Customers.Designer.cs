@@ -49,9 +49,9 @@
             this.columnHeader6,
             this.columnHeader5});
             this.CustomersListView.GridLines = true;
-            this.CustomersListView.Location = new System.Drawing.Point(13, 13);
+            this.CustomersListView.Location = new System.Drawing.Point(15, 24);
             this.CustomersListView.Name = "CustomersListView";
-            this.CustomersListView.Size = new System.Drawing.Size(568, 398);
+            this.CustomersListView.Size = new System.Drawing.Size(364, 390);
             this.CustomersListView.TabIndex = 0;
             this.CustomersListView.UseCompatibleStateImageBehavior = false;
             this.CustomersListView.View = System.Windows.Forms.View.Details;
@@ -85,7 +85,7 @@
             // PreviousButton
             // 
             this.PreviousButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PreviousButton.Location = new System.Drawing.Point(13, 431);
+            this.PreviousButton.Location = new System.Drawing.Point(14, 420);
             this.PreviousButton.Name = "PreviousButton";
             this.PreviousButton.Size = new System.Drawing.Size(28, 23);
             this.PreviousButton.TabIndex = 1;
@@ -96,7 +96,7 @@
             // NextButton
             // 
             this.NextButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NextButton.Location = new System.Drawing.Point(47, 431);
+            this.NextButton.Location = new System.Drawing.Point(48, 420);
             this.NextButton.Name = "NextButton";
             this.NextButton.Size = new System.Drawing.Size(28, 23);
             this.NextButton.TabIndex = 2;
@@ -108,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(593, 485);
+            this.ClientSize = new System.Drawing.Size(739, 521);
             this.Controls.Add(this.NextButton);
             this.Controls.Add(this.PreviousButton);
             this.Controls.Add(this.CustomersListView);

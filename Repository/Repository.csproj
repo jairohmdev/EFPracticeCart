@@ -54,13 +54,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Customers\Models.csproj">
-      <Project>{27a28dc5-22d3-4340-9898-d2224eb6bf16}</Project>
-      <Name>Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Jairoh.EFPractice.Cart.Interface\Interface.csproj">
+    <ProjectReference Include="..\Interface\Interface.csproj">
       <Project>{5ee1448f-bd27-4bca-8327-22ddbe049541}</Project>
       <Name>Interface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{27a28dc5-22d3-4340-9898-d2224eb6bf16}</Project>
+      <Name>Models</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

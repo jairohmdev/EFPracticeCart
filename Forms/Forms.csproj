@@ -92,7 +92,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Customers\Models.csproj">
+    <ProjectReference Include="..\Models\Models.csproj">
       <Project>{27a28dc5-22d3-4340-9898-d2224eb6bf16}</Project>
       <Name>Models</Name>
     </ProjectReference>

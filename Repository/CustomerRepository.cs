@@ -1,8 +1,8 @@
-﻿using Models;
-using Interface;
+﻿using Interface;
 using System.Collections.Generic;
 using System.Linq;
 using System;
+using Models;
 
 namespace Repository
 {
