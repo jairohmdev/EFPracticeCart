@@ -1,0 +1,10 @@
+C:\Users\Mllrdev10\documents\visual studio 2015\Projects\Jairoh.EFPractice.Cart\Customers\obj\Debug\Models.csprojResolveAssemblyReference.cache
+C:\Users\Mllrdev10\documents\visual studio 2015\Projects\Jairoh.EFPractice.Cart\Customers\bin\Debug\Models.exe.config
+C:\Users\Mllrdev10\documents\visual studio 2015\Projects\Jairoh.EFPractice.Cart\Customers\bin\Debug\Models.exe
+C:\Users\Mllrdev10\documents\visual studio 2015\Projects\Jairoh.EFPractice.Cart\Customers\bin\Debug\Models.pdb
+C:\Users\Mllrdev10\documents\visual studio 2015\Projects\Jairoh.EFPractice.Cart\Customers\bin\Debug\EntityFramework.dll
+C:\Users\Mllrdev10\documents\visual studio 2015\Projects\Jairoh.EFPractice.Cart\Customers\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mllrdev10\documents\visual studio 2015\Projects\Jairoh.EFPractice.Cart\Customers\bin\Debug\EntityFramework.xml
+C:\Users\Mllrdev10\documents\visual studio 2015\Projects\Jairoh.EFPractice.Cart\Customers\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mllrdev10\documents\visual studio 2015\Projects\Jairoh.EFPractice.Cart\Customers\obj\Debug\Models.exe
+C:\Users\Mllrdev10\documents\visual studio 2015\Projects\Jairoh.EFPractice.Cart\Customers\obj\Debug\Models.pdb
