@@ -7,7 +7,7 @@ namespace Interface
     {
         List<Customer> GetAll();
         TModel Insert(TModel entity);
-        int Delete(TModel entity);
-        object Update(object id, TModel entity);
+        bool Delete(int id);
+        bool Update(TModel entity);
     }
 }

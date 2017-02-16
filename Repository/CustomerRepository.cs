@@ -24,15 +24,39 @@ namespace Repository
         {
             throw new NotImplementedException();
         }
-        public int Delete(Customer entity)
+        public bool Delete(int id)
         {
-            throw new NotImplementedException();
+            try
+            {
+                var customer = _dbContext.Customers.FirstOrDefault(x => x.Id == id);
+                _dbContext.Customers.Remove(customer);
+            }
+            catch (InvalidOperationException e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+            return (_dbContext.SaveChanges() == 1) ? true : false;
         }
 
-        public object Update(object id, Customer entity)
+        public bool Update(Customer entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Customer customer = GetAll().Where(c => c.Id == entity.Id).First();
+                customer.Name = entity.Name;
+                customer.Address = entity.Address;
+                customer.City = entity.City;
+                customer.Zip = entity.Zip;
+                customer.State = entity.State;
+            }
+            catch (InvalidOperationException e)
+            {
+                Console.WriteLine(e.ToString());
+            }
+
+            return (_dbContext.SaveChanges() == 1) ? true : false;
         }
+
         public List<Customer> GetSomeCustomers(int startIndex, int limit)
         {
             return GetAll().OrderBy(x => x.Id).Skip(startIndex).Take(limit).ToList();
