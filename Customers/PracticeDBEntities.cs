@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace Customers
+namespace Models
 {
     public class PracticeDBEntities : DbContext
     {

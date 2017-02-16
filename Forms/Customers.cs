@@ -1,7 +1,6 @@
-﻿using Customers;
+﻿using Models;
 using Repository;
 using System;
-using System.Linq;
 using System.Windows.Forms;
 
 

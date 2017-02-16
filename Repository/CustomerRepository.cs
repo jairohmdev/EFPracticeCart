@@ -1,7 +1,8 @@
-﻿using Customers;
+﻿using Models;
 using Interface;
 using System.Collections.Generic;
 using System.Linq;
+using System;
 
 namespace Repository
 {
@@ -19,11 +20,22 @@ namespace Repository
             return _dbContext.Customers.ToList();
         }
 
-        public List<Customer> GetSomeCustomers( int startIndex, int limit )
+        public Customer Insert(Customer entity)
+        {
+            throw new NotImplementedException();
+        }
+        public int Delete(Customer entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public object Update(object id, Customer entity)
+        {
+            throw new NotImplementedException();
+        }
+        public List<Customer> GetSomeCustomers(int startIndex, int limit)
         {
             return GetAll().OrderBy(x => x.Id).Skip(startIndex).Take(limit).ToList();
         }
-
-
     }
 }
