@@ -6,9 +6,7 @@ using System.Threading.Tasks;
 
 namespace Models
 {
-    class Class1
+    public class Class1
     {
-        static void Main() {
-        }
     }
 }

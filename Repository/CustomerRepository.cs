@@ -20,10 +20,22 @@ namespace Repository
             return _dbContext.Customers.ToList();
         }
 
-        public Customer Insert(Customer entity)
+        public bool Insert(Customer entity)
         {
-            throw new NotImplementedException();
+            try
+            {
+                _dbContext.Customers.Add(entity);
+                _dbContext.SaveChanges();
+
+                return true;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+                return false;
+            }
         }
+
         public bool Delete(int id)
         {
             try
@@ -31,7 +43,7 @@ namespace Repository
                 var customer = _dbContext.Customers.FirstOrDefault(x => x.Id == id);
                 _dbContext.Customers.Remove(customer);
             }
-            catch (InvalidOperationException e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
             }
@@ -48,13 +60,16 @@ namespace Repository
                 customer.City = entity.City;
                 customer.Zip = entity.Zip;
                 customer.State = entity.State;
+
+                _dbContext.SaveChanges();
+
+                return true;
             }
-            catch (InvalidOperationException e)
+            catch (Exception e)
             {
                 Console.WriteLine(e.ToString());
+                return false;
             }
-
-            return (_dbContext.SaveChanges() == 1) ? true : false;
         }
 
         public List<Customer> GetSomeCustomers(int startIndex, int limit)
