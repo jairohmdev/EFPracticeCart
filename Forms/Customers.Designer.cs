@@ -38,7 +38,10 @@
             this.PreviousButton = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.SaveButton = new System.Windows.Forms.Button();
+            this.ClearButton = new System.Windows.Forms.Button();
+            this.AddNewCustomerButton = new System.Windows.Forms.Button();
+            this.DeleteCustomerButton = new System.Windows.Forms.Button();
+            this.UpdateCustomerButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -52,7 +55,6 @@
             this.NameLabel = new System.Windows.Forms.TextBox();
             this.IdLabel = new System.Windows.Forms.TextBox();
             this.RefreshButton = new System.Windows.Forms.Button();
-            this.DeleteButton = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -127,8 +129,10 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.DeleteButton);
-            this.groupBox1.Controls.Add(this.SaveButton);
+            this.groupBox1.Controls.Add(this.ClearButton);
+            this.groupBox1.Controls.Add(this.AddNewCustomerButton);
+            this.groupBox1.Controls.Add(this.DeleteCustomerButton);
+            this.groupBox1.Controls.Add(this.UpdateCustomerButton);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
@@ -146,17 +150,48 @@
             this.groupBox1.Size = new System.Drawing.Size(259, 208);
             this.groupBox1.TabIndex = 3;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Manage Customer";
+            this.groupBox1.Text = "Add/Update/Delete Customer";
             // 
-            // SaveButton
+            // ClearButton
             // 
-            this.SaveButton.Location = new System.Drawing.Point(149, 179);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(49, 23);
-            this.SaveButton.TabIndex = 4;
-            this.SaveButton.Text = "Save";
-            this.SaveButton.UseVisualStyleBackColor = true;
-            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
+            this.ClearButton.Location = new System.Drawing.Point(6, 179);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(54, 23);
+            this.ClearButton.TabIndex = 12;
+            this.ClearButton.Text = "Clear";
+            this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
+            // 
+            // AddNewCustomerButton
+            // 
+            this.AddNewCustomerButton.Location = new System.Drawing.Point(79, 179);
+            this.AddNewCustomerButton.Name = "AddNewCustomerButton";
+            this.AddNewCustomerButton.Size = new System.Drawing.Size(54, 23);
+            this.AddNewCustomerButton.TabIndex = 4;
+            this.AddNewCustomerButton.Text = "Add";
+            this.AddNewCustomerButton.UseVisualStyleBackColor = true;
+            this.AddNewCustomerButton.Click += new System.EventHandler(this.AddNewCustomerButton_Click);
+            // 
+            // DeleteCustomerButton
+            // 
+            this.DeleteCustomerButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DeleteCustomerButton.Location = new System.Drawing.Point(199, 179);
+            this.DeleteCustomerButton.Name = "DeleteCustomerButton";
+            this.DeleteCustomerButton.Size = new System.Drawing.Size(54, 23);
+            this.DeleteCustomerButton.TabIndex = 5;
+            this.DeleteCustomerButton.Text = "Delete";
+            this.DeleteCustomerButton.UseVisualStyleBackColor = true;
+            this.DeleteCustomerButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
+            // UpdateCustomerButton
+            // 
+            this.UpdateCustomerButton.Location = new System.Drawing.Point(139, 179);
+            this.UpdateCustomerButton.Name = "UpdateCustomerButton";
+            this.UpdateCustomerButton.Size = new System.Drawing.Size(54, 23);
+            this.UpdateCustomerButton.TabIndex = 4;
+            this.UpdateCustomerButton.Text = "Update";
+            this.UpdateCustomerButton.UseVisualStyleBackColor = true;
+            this.UpdateCustomerButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
             // label6
             // 
@@ -214,7 +249,6 @@
             // 
             // StateLabel
             // 
-            this.StateLabel.Enabled = false;
             this.StateLabel.Location = new System.Drawing.Point(62, 153);
             this.StateLabel.Name = "StateLabel";
             this.StateLabel.Size = new System.Drawing.Size(180, 20);
@@ -266,17 +300,6 @@
             this.RefreshButton.UseVisualStyleBackColor = true;
             this.RefreshButton.Click += new System.EventHandler(this.RefreshButton_Click);
             // 
-            // DeleteButton
-            // 
-            this.DeleteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DeleteButton.Location = new System.Drawing.Point(204, 179);
-            this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(49, 23);
-            this.DeleteButton.TabIndex = 5;
-            this.DeleteButton.Text = "Delete";
-            this.DeleteButton.UseVisualStyleBackColor = true;
-            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
-            // 
             // Customers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -320,9 +343,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button SaveButton;
+        private System.Windows.Forms.Button UpdateCustomerButton;
         private System.Windows.Forms.Button RefreshButton;
-        private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.Button DeleteCustomerButton;
+        private System.Windows.Forms.Button ClearButton;
+        private System.Windows.Forms.Button AddNewCustomerButton;
     }
 }
 

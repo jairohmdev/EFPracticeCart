@@ -1,0 +1,4 @@
+C:\Users\Mllrdev10\Documents\Visual Studio 2015\Projects\Jairoh.EFPractice.Cart\Extentions\bin\Debug\Extentions.dll
+C:\Users\Mllrdev10\Documents\Visual Studio 2015\Projects\Jairoh.EFPractice.Cart\Extentions\bin\Debug\Extentions.pdb
+C:\Users\Mllrdev10\Documents\Visual Studio 2015\Projects\Jairoh.EFPractice.Cart\Extentions\obj\Debug\Extentions.dll
+C:\Users\Mllrdev10\Documents\Visual Studio 2015\Projects\Jairoh.EFPractice.Cart\Extentions\obj\Debug\Extentions.pdb

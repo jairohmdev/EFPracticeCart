@@ -97,8 +97,29 @@ namespace Forms
             NameLabel.Text = CustomersListView.Items[row].SubItems[1].Text;
             AddressLabel.Text = CustomersListView.Items[row].SubItems[2].Text;
             CityLabel.Text = CustomersListView.Items[row].SubItems[3].Text;
-            ZipLabel.Text = CustomersListView.Items[row].SubItems[4].Text;
-            StateLabel.Text = CustomersListView.Items[row].SubItems[5].Text;
+            StateLabel.Text = CustomersListView.Items[row].SubItems[4].Text;
+            ZipLabel.Text = CustomersListView.Items[row].SubItems[5].Text;
+        }
+
+        private void AddNewCustomerButton_Click(object sender, EventArgs e)
+        {
+            Customer newCustomer = new Customer()
+            {
+                Name = NameLabel.Text,
+                Address = AddressLabel.Text,
+                City = CityLabel.Text,
+                Zip = ZipLabel.Text,
+                State = StateLabel.Text
+            };
+            if (_repository.Insert(newCustomer))
+            {
+                MessageBox.Show("Customer Added!");
+                ClearFields();
+            }
+            else
+            {
+                MessageBox.Show("Error: Unable to add new customer.");
+            }
         }
 
         private void SaveButton_Click(object sender, EventArgs e)
@@ -118,6 +139,7 @@ namespace Forms
             if (_repository.Delete(GetSelectedCustomer().Id))
             {
                 MessageBox.Show("Customer Deleted!");
+                ClearFields();
             }
             else
             {
@@ -126,16 +148,40 @@ namespace Forms
         }
         private Customer GetSelectedCustomer()
         {
-            return new Customer()
+            try
             {
-                Id = int.Parse(IdLabel.Text),
-                Name = NameLabel.Text,
-                Address = AddressLabel.Text,
-                City = CityLabel.Text,
-                Zip = ZipLabel.Text,
-                State = StateLabel.Text
-            };
+                return new Customer()
+                {
+                    Id = int.Parse(IdLabel.Text),
+                    Name = NameLabel.Text,
+                    Address = AddressLabel.Text,
+                    City = CityLabel.Text,
+                    Zip = ZipLabel.Text,
+                    State = StateLabel.Text
+                };
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine(e.ToString());
+                return new Customer();
+            }
         }
 
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            ClearFields();
+        }
+
+        private void ClearFields()
+        {
+            IdLabel.Text = String.Empty;
+            NameLabel.Text = String.Empty;
+            AddressLabel.Text = String.Empty;
+            CityLabel.Text = String.Empty;
+            ZipLabel.Text = String.Empty;
+            StateLabel.Text = String.Empty;
+        }
     }
 }
+
+
