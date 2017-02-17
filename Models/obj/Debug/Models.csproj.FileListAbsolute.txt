@@ -15,5 +15,9 @@ C:\Users\Mllrdev10\Documents\Visual Studio 2015\Projects\Jairoh.EFPractice.Cart\
 C:\Users\Mllrdev10\Documents\Visual Studio 2015\Projects\Jairoh.EFPractice.Cart\Models\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Mllrdev10\Documents\Visual Studio 2015\Projects\Jairoh.EFPractice.Cart\Models\bin\Debug\EntityFramework.xml
 C:\Users\Mllrdev10\Documents\Visual Studio 2015\Projects\Jairoh.EFPractice.Cart\Models\bin\Debug\EntityFramework.SqlServer.xml
+<<<<<<< Updated upstream
+=======
+C:\Users\Mllrdev10\Documents\Visual Studio 2015\Projects\Jairoh.EFPractice.Cart\Models\obj\Debug\Models.csprojResolveAssemblyReference.cache
+>>>>>>> Stashed changes
 C:\Users\Mllrdev10\Documents\Visual Studio 2015\Projects\Jairoh.EFPractice.Cart\Models\obj\Debug\Models.exe
 C:\Users\Mllrdev10\Documents\Visual Studio 2015\Projects\Jairoh.EFPractice.Cart\Models\obj\Debug\Models.pdb
